@@ -20,6 +20,7 @@
 %>
 <%
 	List<Product> products = new ArrayList<Product>();
+	//lazy 用来表示biao'shi
 	int totalRecords = ProductMgr.getInstance().getProducts(products, pageNo, PAGE_SIZE, false);
 	int totalPages = (totalRecords + PAGE_SIZE - 1) / PAGE_SIZE;
 

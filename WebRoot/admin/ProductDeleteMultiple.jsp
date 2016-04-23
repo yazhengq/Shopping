@@ -2,6 +2,7 @@
 <%@ page import="com.bjsxt.shopping.product.*"%>
 
 <%
+//拿到这个名字传过来的所有值
 String[] idArray = request.getParameterValues("id");
 if(idArray == null || idArray.length == 0) {
 	out.println("ID号输入错误！");

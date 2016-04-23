@@ -110,6 +110,7 @@ function check() {
 <td class="altbg2">
 	<select name="categoryId">
 		<%
+		//显示所属类别 为一个下拉条！！！
 		List<Category> categories = CategoryService.getInstance().getCategories();
 		for(Iterator<Category> it = categories.iterator(); it.hasNext(); ) {
 			Category c = it.next();

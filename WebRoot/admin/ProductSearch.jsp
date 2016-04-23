@@ -61,8 +61,7 @@ function check() {
 									--所有商品--
 								</option>
 								<%
-											List<Category> categories = CategoryService.getInstance()
-											.getCategories();
+									List<Category> categories = CategoryService.getInstance().getCategories();
 									for (int i = 0; i < categories.size(); i++) {
 										Category c = categories.get(i);
 										String preStr = "";

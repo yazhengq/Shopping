@@ -16,6 +16,7 @@ public class CategoryService {
 	
 	private CategoryService() {}
 	
+	//静态工厂方法
 	public static CategoryService getInstance() {
 		if(service == null) {
 			service = new CategoryService();

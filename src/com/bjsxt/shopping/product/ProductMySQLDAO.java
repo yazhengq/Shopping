@@ -85,6 +85,7 @@ public class ProductMySQLDAO implements ProductDAO {
 		if(lazy) {
 			sql = "select * from product order by pdate desc";
 		} else {
+			//Á´½Ó£¬×Ó²éÑ¯
 			sql = "select p.id productid, p.name pname, p.descr pdescr, p.normalprice, " +
 					" p.memberprice, p.pdate, p.categoryid , " +
 					" c.id categoryid, c.name cname, c.descr cdescr, c.pid, c.cno, c.grade " +

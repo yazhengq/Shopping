@@ -78,6 +78,7 @@ public class User {
 		this.username = username;
 	}
 
+	//user对象连上数据，把它自己插入到数据库里
 	public void save() {
 		Connection conn = DB.getConn();
 		String sql = "insert into user values (null, ?, ?, ?, ?, ?)";
@@ -131,6 +132,7 @@ public class User {
 	 * @param pageNo
 	 * @param pageSize
 	 * @return 总共有多少条记录
+	 * static 取到所有的用户 不用new User
 	 */
 	public static int getUsers(List<User> users, int pageNo, int pageSize) {
 

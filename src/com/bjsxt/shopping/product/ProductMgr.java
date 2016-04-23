@@ -5,6 +5,7 @@ import java.util.List;
 public class ProductMgr {
 	private static ProductMgr mgr = null;
 	
+	//多态 反射机制
 	private static ProductDAO dao = new ProductMySQLDAO(); 
 	
 	private ProductMgr() {}
@@ -46,6 +47,7 @@ public class ProductMgr {
 			conditionStr += idArray[i];
 			conditionStr += ",";
 		}
+		//.$ 把末尾替换为）
 		conditionStr = conditionStr.replaceAll(".$", ")");
 		//conditionStr = conditionStr.substring(0, conditionStr.length() - 1) + ")";
 System.out.println(conditionStr);

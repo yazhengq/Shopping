@@ -19,6 +19,7 @@ public class Product {
 
 	private int categoryId;
 	
+	//对象和类别之间是有关系
 	private Category category;
 	
 	public int getCategoryId() {
